@@ -1,0 +1,493 @@
+@charset "UTF-8";
+/* w oknie polece┼ä:  sass --watch sass/style.sass:css/style.css --style expanded */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #DCE7E7;
+  font-size: 1.45vw;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.6em;
+}
+@media screen and (max-device-width: 400px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  h1 {
+    font-size: 2.8em;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+p {
+  margin-top: 1em;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+}
+@media screen and (max-device-width: 400px) {
+  p {
+    font-size: 2.2em;
+    margin-top: 0.5em;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  p {
+    font-size: 1.8em;
+    margin-top: 0.7em;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  p {
+    font-size: 1em;
+  }
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-device-width: 400px) {
+  .row {
+    flex-direction: column;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+p > a {
+  font-size: 1em;
+}
+
+.text {
+  flex: 2;
+}
+@media screen and (max-device-width: 400px) {
+  .text {
+    flex: 2;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .text {
+    flex: 1.8;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .text {
+    flex: 1.6;
+  }
+}
+
+.panel {
+  margin: 2em auto;
+  padding: 2.5em;
+  border: 1px solid #DCE7E7;
+  width: 80%;
+  height: 85%;
+  overflow: hidden;
+}
+@media screen and (max-device-width: 400px) {
+  .panel {
+    width: 85%;
+    height: 90%;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .panel {
+    width: 85%;
+    height: 90%;
+    padding: 2em;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .panel {
+    width: 90%;
+    padding: 1.5em;
+  }
+}
+
+.container-1 {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: 100vh;
+  background-color: #0e527c;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+back-imagin-1 {
+  background-image: url("../images/asia-tybet.png");
+  background-position: 50% 0%;
+}
+
+.carousel {
+  flex: 3;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-device-width: 400px) {
+  .carousel {
+    flex: 1;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .carousel {
+    flex: 1.2;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .carousel {
+    flex: 1.4;
+  }
+}
+
+.carousel__container {
+  width: 100%;
+  height: 400vh;
+  position: absolute;
+}
+
+[class^='img'] {
+  height: 100vh;
+  width: 100%;
+  display: block;
+}
+
+.img-1 {
+  background: #C7D1D7;
+}
+
+.img-2 {
+  background: #0E679B;
+}
+
+.img-3 {
+  background: #9DBD00;
+}
+
+.img-4 {
+  background: #595E62;
+}
+
+#input-1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  top: 85vh;
+  left: 75px;
+}
+@media screen and (max-device-width: 400px) {
+  #input-1 {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  #input-1 {
+    top: 25vh;
+    left: 35px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  #input-1 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  #input-1 {
+    top: 36vh;
+  }
+}
+
+.label-1 {
+  background: white;
+  border: 1px solid #0e527c;
+  border-top: 2px solid #0e527c;
+  border-radius: 2px;
+  padding: 18px 18px;
+  position: absolute;
+  z-index: 10;
+  top: 85vh;
+  left: 80px;
+}
+@media screen and (max-device-width: 400px) {
+  .label-1 {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  .label-1 {
+    top: 25vh;
+    left: 40px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .label-1 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .label-1 {
+    top: 36vh;
+  }
+}
+
+#input-2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  top: 85vh;
+  left: 125px;
+}
+@media screen and (max-device-width: 400px) {
+  #input-2 {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  #input-2 {
+    top: 25vh;
+    left: 65px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  #input-2 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  #input-2 {
+    top: 36vh;
+  }
+}
+
+.label-2 {
+  background: white;
+  border: 1px solid #0e527c;
+  border-top: 2px solid #0e527c;
+  border-radius: 2px;
+  padding: 18px 18px;
+  position: absolute;
+  z-index: 10;
+  top: 85vh;
+  left: 130px;
+}
+@media screen and (max-device-width: 400px) {
+  .label-2 {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  .label-2 {
+    top: 25vh;
+    left: 70px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .label-2 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .label-2 {
+    top: 36vh;
+  }
+}
+
+#input-3 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  top: 85vh;
+  left: 175px;
+}
+@media screen and (max-device-width: 400px) {
+  #input-3 {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  #input-3 {
+    top: 25vh;
+    left: 95px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  #input-3 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  #input-3 {
+    top: 36vh;
+  }
+}
+
+.label-3 {
+  background: white;
+  border: 1px solid #0e527c;
+  border-top: 2px solid #0e527c;
+  border-radius: 2px;
+  padding: 18px 18px;
+  position: absolute;
+  z-index: 10;
+  top: 85vh;
+  left: 180px;
+}
+@media screen and (max-device-width: 400px) {
+  .label-3 {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  .label-3 {
+    top: 25vh;
+    left: 100px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .label-3 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .label-3 {
+    top: 36vh;
+  }
+}
+
+#input-4 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  top: 85vh;
+  left: 225px;
+}
+@media screen and (max-device-width: 400px) {
+  #input-4 {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  #input-4 {
+    top: 25vh;
+    left: 125px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  #input-4 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  #input-4 {
+    top: 36vh;
+  }
+}
+
+.label-4 {
+  background: white;
+  border: 1px solid #0e527c;
+  border-top: 2px solid #0e527c;
+  border-radius: 2px;
+  padding: 18px 18px;
+  position: absolute;
+  z-index: 10;
+  top: 85vh;
+  left: 230px;
+}
+@media screen and (max-device-width: 400px) {
+  .label-4 {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-device-width: 400px) {
+  .label-4 {
+    top: 25vh;
+    left: 130px;
+  }
+}
+@media (min-width: 400px) and (max-width: 700px) {
+  .label-4 {
+    top: 32vh;
+  }
+}
+@media (min-width: 700px) and (max-width: 1000px) {
+  .label-4 {
+    top: 36vh;
+  }
+}
+
+label:hover {
+  cursor: pointer;
+}
+
+#input-1:checked ~ .carousel__container {
+  transform: translateY(0px);
+}
+#input-1:checked ~ .label-1 {
+  border-top: 3px solid white;
+  background-color: #0e527c;
+}
+
+#input-2:checked ~ .carousel__container {
+  transform: translateY(-100vh);
+}
+#input-2:checked ~ .label-2 {
+  border-top: 3px solid white;
+  background-color: #0e527c;
+}
+
+#input-3:checked ~ .carousel__container {
+  transform: translateY(-200vh);
+}
+#input-3:checked ~ .label-3 {
+  border-top: 3px solid white;
+  background-color: #0e527c;
+}
+
+#input-4:checked ~ .carousel__container {
+  transform: translateY(-300vh);
+}
+#input-4:checked ~ .label-4 {
+  border-top: 3px solid white;
+  background-color: #0e527c;
+}
+
+/*# sourceMappingURL=style.css.map */
